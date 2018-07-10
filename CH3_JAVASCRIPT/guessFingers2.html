@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    I have <input id="numFingers" > fingers up
+    <br>
+    <button id="submit">Guess!</button>
+
+    <script media="screen">
+      document.getElementById("submit").onclick=function(){
+
+        var guesses = 1; var gotIt = false; var x;
+
+        while(gotIt == false){
+          x = Math.floor(Math.random()*6);
+          if(document.getElementById("numFingers").value == x){
+            gotIt = true;
+          }else{
+            guesses++;
+          }
+      }
+      alert("Got it,"+ guesses + "guesses");
+    }
+    </script>
+  </body>
+</html>

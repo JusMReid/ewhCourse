@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Jay BBC</title>
+  </head>
+
+  <style >
+    #topBar{
+      background-color: #7B0001;
+    }
+  </style>
+
+  <body>
+    <div id="container">
+      <div id="topBar">
+
+      </div>
+
+    </div>
+
+  </body>
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="styles2.css">
+    <script type="text/javascript" src="jquery.min.js"></script>
+  </head>
+  <body>
+    <div id="wrapper">
+      <div class="header">
+        <h3>CodePlayer</h3>
+
+        <div id="runButtonDiv">
+          <button id="runButton" type="button" name="button">Run</button>
+          </div>
+
+          <div id="menu">
+          <ul>
+            <li class="selector selected" name="html">HTML</li>
+            <li class="selector" name="css">CSS</li>
+            <li class="selector" name="js">JS</li>
+            <li class="selector selected" name="result" style="borderright:none">Result</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="clear"></div>
+
+
+      <div id="htmlDiv" class="option HTMLDIV">
+        <div class="label">HTML</div>
+        <textarea id="htmlCode"><div id="test"></div></textarea>
+      </div>
+
+      <div id="cssDiv" class="option CSSDIV">
+        <div class="label">CSS</div>
+        <textarea id="cssCode">html{background-color:blue;}</textarea>
+      </div>
+
+      <div id="jsDiv" class="option JSDIV">
+        <div class="label">JS</div>
+        <textarea id="jsCode">document.getElementsById("test").innerHTML = "Its WOrking!";</textarea>
+      </div>
+
+      <div id="resultsDiv" class="option ResultsDIV">
+        <div class="label">RESULTS</div>
+          <div class="resultContainer"><iframe id="resultFrame"> </iframe></div>
+      </div>
+
+    </div>
+
+    <script type="text/javascript" src="script2.js"></script>
+  </body>
+</html>

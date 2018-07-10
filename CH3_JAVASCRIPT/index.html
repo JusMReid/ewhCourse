@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Learning Javascript</title>
+
+    <link rel="stylesheet" type="text/css" href="styles.css">
+
+    <style media="screen">
+      #a{
+        float: left;
+      }
+      #b{
+        float: right;
+        margin-right: 500px;
+      }
+    </style>
+  </head>
+
+
+  <body>
+    <div id="a">
+      <button id="myButton"type="button" name="button" >Click Me To Change Div Text!</button>
+      <div id="firstDiv">
+        Click Button To Change My Text!
+      </div>
+    </div>
+
+    <div id="b">
+      <button id="button2" type="button" name="button">Click me to append text to div #2</button>
+      <div id="div2">
+        Javascript is ...
+      </div>
+    </div>
+    <br><br><br><br>
+
+    <button id="button3" type="button" name="button">Click To Make Text Appear</button>
+    <div id="div3"></div>
+    <br><br><br>
+
+    <a href="miniChallenge1.html">Go To Mini Challenge 1</a>
+    <br><br><br>
+
+    <a href="guessFingers.html">Go To Guess How Many Fingers Challenge</a>
+    <br><br><br>
+
+    <a href="guessFingers2.html">Go To Guess How Many Fingers Challenge #2</a>
+    <br><br><br>
+
+    <input id="input" type="text" name="" value="">
+    <button id="inputButton" type="button" name="button">Submit Input</button>
+    <p id="valueText"></p>
+    <br><br><br>
+
+    <button id="showArray" type="button" name="button">Show Array</button>
+    <div id="array"></div>
+
+    <a href="reactionTester.html">Go To Reaction Tester Challenge</a>
+
+    <script type="text/javascript">
+      //alert(document.getElementById('thing').innerHTML);
+      //document.getElementById("thing").innerHTML = "Changed text";
+      document.getElementById("myButton").onclick = function(){
+        document.getElementById("firstDiv").innerHTML = "Youve changed my text!";
+      }
+
+      document.getElementById("button2").onclick = function() {
+        document.getElementById("div2").innerHTML = document.getElementById("div2").innerHTML + " cool !";
+      }
+
+      document.getElementById("button3").onclick=function(){
+      document.getElementById("div3").innerHTML = "<p style='background-color:blue;color:white;'>This text is new !</p>";
+      }
+
+      var newText = document.getElementById("input").value;
+      document.getElementById("inputButton").onclick = function(){
+        newText = document.getElementById("input").value;
+        document.getElementById("valueText").innerHTML = newText;
+        document.getElementById("input").value = "";
+      }
+
+      var myArray = new Array();
+      myArray[0] = "Potato";
+      myArray[1] = "Tomato";
+      myArray.push("Cheese");
+      myArray.splice(0,1,"Bread");
+      document.getElementById("showArray").onclick = function() {
+          document.getElementById("array").innerHTML = myArray;
+      }
+
+      var num = 2;
+      if (num == 5) {
+        alert("Num is 5");
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,47 @@
+body{
+  background-color: #8b909b;
+  margin: 0;
+  padding: 0;
+  font-family: Bradley Hand, cursive;
+}
+.marginTop{
+  margin-top: 40px;
+}
+.center{
+  text-align: center;
+}
+.title{
+  margin-top: 80px;
+  font-size: 300%;
+}
+.part{
+  border-left: 1px solid black;
+}
+nav{
+  margin: 0;
+  padding: 0;
+}
+
+.navbar-brand{
+  font-size: 1.8em;
+}
+
+#topContainer{
+  background-image: url("blockchainGlobe.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+#logInButton{
+  float: right;
+}
+#topRow{
+  margin: auto;
+  /* border: 1px solid white; */
+  margin-top: 100px;
+  text-align: center;
+}
+
+#topRow h1{
+  font-size: 350%;
+}
